@@ -1,0 +1,42 @@
+|| 🪵 ModernWood – Furnix E-Commerce Website  ||
+
+ModernWood (Furnix) is a **modern and responsive e-commerce platform  designed for premium wooden furniture.  
+It allows users to explore, filter, and purchase products with a smooth and optimized experience.  
+
+---
+
+|| 🚀 Features  
+- ✅ Modern & Responsive UI (Mobile + Desktop Friendly)  
+- ✅ Product Catalog with Categories & Filters  
+- ✅ Advanced Search & Sorting Options  
+- ✅ Shopping Cart & Wishlist Management  
+- ✅ Secure Checkout Process (Payment Gateway Ready)  
+- ✅ User Authentication (Login / Signup / Profile Management)  
+- ✅ Admin Dashboard (Product, Orders & Users Management)  
+- ✅ Order Tracking System  
+- ✅ SEO Optimized & Fast Loading  
+
+---
+
+|| 🛠️ Tech Stack  
+- **Frontend:** React.js / Next.js, Tailwind CSS, Redux / Context API  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB / MySQL  
+- **Authentication:** JWT / OAuth  
+- **Deployment:** Vercel / Netlify (Frontend), Render / AWS / Heroku (Backend)  
+
+--- 📂 Project Structure  
+# Frontend
+cd frontend
+npm install
+
+# Backend
+cd ../backend
+npm install
+
+---
+
+⚡ Now you can copy this as `README.md` in your repo root.  
+
+Do you want me to generate this as a **real `.md` file** so you can directly upload it to GitHub instead of copy-pasting?
+
