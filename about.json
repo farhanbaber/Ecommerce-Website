@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name" : "assets/lamp 11.jpg",
+        "price" : "$40",
+        "image" : "assets/lamp14.jpg"
+
+    },
+    {
+        "id" : 2,
+         "name" : "assets/lamp 16.jpg",
+        "price" : "$40",
+        "image" : "assets/lamp14.jpg"
+
+    },
+    {
+        "id" : 3,
+        "name" : "assets/lamp 3.jpg",
+         "price" : "$40",
+        "image" : "assets/lamp14.jpg"
+    }
+]
