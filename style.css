@@ -2847,6 +2847,9 @@ body {
     padding: 0.2rem 0.6rem;
     margin: 0.3rem 0;
   }
+  .main-parent-one{
+    border: 2px solid blue;
+  }
 
 }
 
