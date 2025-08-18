@@ -3977,6 +3977,13 @@ body {
     box-sizing: border-box;
   }
 }
+@media (max-width: 768px) {
+  .img-one-cont{
+    border: 2px solid red;
+    margin-top: 3rem;
+  }
+  
+}
 
 .new-div-5 {
   width: 100%;
