@@ -974,7 +974,8 @@ body {
     /* zaroori hai */
     /* border: 2px solid red; */
   }
-  .main-fot{
+
+  .main-fot {
     /* border: 2px solid red; */
     margin-top: 2rem;
   }
@@ -3977,9 +3978,10 @@ body {
     box-sizing: border-box;
   }
 }
+
 @media (max-width: 768px) {
-  .main-parent-one{
-    height: 150vh;
+  .main-parent-one {
+    height: 100vh;
   }
 
 }
