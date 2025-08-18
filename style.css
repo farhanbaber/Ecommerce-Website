@@ -3978,11 +3978,10 @@ body {
   }
 }
 @media (max-width: 768px) {
-  .img-one-cont{
-    border: 2px solid red;
-    margin-top: 7rem;
+  .main-parent-one{
+    height: 90vh;
   }
-  
+
 }
 
 .new-div-5 {
