@@ -4003,6 +4003,12 @@ body {
     /* height: 100vh; */
     border: 2px solid red;
   }
+  .new-div-4{
+    border: 2px solid red;
+    background-color: whitesmoke;
+    height: 60vh;
+    
+  }
 
 }
 
