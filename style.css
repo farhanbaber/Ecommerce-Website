@@ -410,8 +410,10 @@
 
 .product-one {
   width: 15%;
-  height: 40vh;
+  height: 50vh;
   /* border: 2px solid red; */
+  background-color: whitesmoke;
+  border-radius: 10px;
 }
 
 #asset-1 {
@@ -420,6 +422,7 @@
   object-fit: cover;
   border-radius: 5px;
   cursor: pointer;
+  /* border: 2px solid green; */
 }
 
 #internal-work {
@@ -851,7 +854,20 @@ body {
     text-align: right;
   }
 }
+/* Mobile screens */
+@media only screen and (max-width: 768px) {
+  .product-one {
+    width: 90%;         /* full width on mobile */
+    height: auto;       /* box height adjusts to content */
+    margin: 10px auto;  /* center */
+  }
 
+  #asset-1 {
+    width: 100%;        /* full responsive */
+    height: auto;       /* maintain natural ratio */
+    object-fit: contain; /* no cropping */
+  }
+}
 
 /* end section */
 
