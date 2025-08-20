@@ -3996,21 +3996,13 @@ body {
     width: 100%;
     box-sizing: border-box;
   }
-}
-
-@media (max-width: 768px) {
-  .main-parent-one {
-    /* height: 100vh; */
-    border: 2px solid red;
-  }
   .new-div-4{
-    border: 2px solid rgb(33, 182, 65);
-    background-color: whitesmoke;
-    height: 110vh;
-    
+    border: 2px solid green;
+    height: 80vh;
   }
-
 }
+
+
 
 .new-div-5 {
   width: 100%;
