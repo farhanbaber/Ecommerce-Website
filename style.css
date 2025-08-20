@@ -4009,12 +4009,17 @@ body {
 
 @media (max-width:600px) {
   .new-div-5 {
-    border : 2px solid green;
-    margin-bottom: 10rem;
-
+    margin-top: 2rem; /* thoda sa gap hi rakho */
+    text-align: center;
   }
 
+  .new-div-6 {
+    margin-top: 1rem;
+    justify-content: center;
+    gap: 15px; /* icons ke beech space */
+  }
 }
+
 
 .icons-Y {
   width: 100%;
@@ -4027,7 +4032,7 @@ body {
 .new-div-5 {
   width: 100%;
   height: 15vh;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .new-div-6 {
