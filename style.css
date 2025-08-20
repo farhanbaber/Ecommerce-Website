@@ -2864,7 +2864,9 @@ body {
     margin: 0.3rem 0;
   }
   .main-parent-one{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
+    background-color: whitesmoke;
+    height: 110vh;
   }
 
 }
@@ -4004,11 +4006,6 @@ body {
 
 
 
-.new-div-5 {
-  width: 100%;
-  height: 15vh;
-  /* border: 2px solid red; */
-}
 
 @media (max-width:600px) {
   .new-div-5 {
@@ -4025,6 +4022,12 @@ body {
   /* border: 2px solid green; */
   display: flex;
   justify-content: center;
+}
+
+.new-div-5 {
+  width: 100%;
+  height: 15vh;
+  /* border: 2px solid red; */
 }
 
 .new-div-6 {
