@@ -4009,17 +4009,12 @@ body {
 
 @media (max-width:600px) {
   .new-div-5 {
-    margin-top: 2rem; /* thoda sa gap hi rakho */
-    text-align: center;
+    /* border : 2px solid green; */
+    margin-top: 64rem;
+
   }
 
-  .new-div-6 {
-    margin-top: 1rem;
-    justify-content: center;
-    gap: 15px; /* icons ke beech space */
-  }
 }
-
 
 .icons-Y {
   width: 100%;
@@ -4124,8 +4119,213 @@ body {
   }
 
 }
+/* ============================= */
+/* TABLETS (up to 1024px) */
+/* ============================= */
+@media only screen and (max-width: 1024px) {
+  /* About top section */
+  .new-div-1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 15px;
+    margin-top: 4rem;
+  }
+
+  .content-one,
+  .content-two {
+    width: 48%;
+    height: auto;
+    min-height: 60vh;
+    padding: 15px;
+  }
+
+  .img-cont {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .text-cont {
+    height: auto;
+    min-height: 40vh;
+  }
+
+  /* second section */
+  .new-div-2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    height: auto;
+  }
+
+  .div-box-1 {
+    width: 45%;
+    height: auto;
+  }
+
+  /* gallery section */
+  .new-div-3 {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .new-div-img {
+    flex-wrap: wrap;
+    padding: 10px;
+    height: auto;
+  }
+
+  .under-img {
+    width: 45%;
+    height: 30vh;
+    margin: 10px;
+  }
+
+  /* cards section */
+  .main-parent-one {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .img-one-cont {
+    width: 45%;
+    height: auto;
+  }
+
+  /* follow us icons */
+  .under-icon {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .cont-one {
+    width: 15%;
+    height: 7vh;
+  }
+}
 
 
+/* ============================= */
+/* MOBILE (up to 600px) */
+/* ============================= */
+@media only screen and (max-width: 600px) {
+  /* About top section */
+  .new-div-1 {
+    flex-direction: column;
+    margin-top: 3rem;
+    padding: 10px;
+    height: auto !important;
+  }
+
+  .content-one,
+  .content-two {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .img-cont {
+    width: 100%;
+    height: auto;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+  }
+
+  .text-cont {
+    height: auto;
+  }
+
+  /* second section */
+  .new-div-2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    height: auto;
+  }
+
+  .div-box-1 {
+    width: 90%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  /* gallery section */
+  .new-div-img {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .under-img {
+    width: 90%;
+    height: 25vh;
+  }
+
+  #new-div-h {
+    font-size: 1.2rem;
+  }
+
+  /* cards section */
+  .main-parent-one {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    height: auto;
+  }
+
+  .img-one-cont {
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  #btx {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .new-div-4 {
+    height: auto; /* fixed: no forced height */
+  }
+
+  /* follow us section */
+  .new-div-5 {
+    margin-top: 2rem; /* removed 64rem! */
+    height: auto;
+    text-align: center;
+  }
+
+  .new-div-6 {
+    margin-top: 1rem;
+    height: auto;
+    justify-content: center;
+  }
+
+  .under-icon {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .cont-one {
+    width: 20%;
+    height: 6vh;
+  }
+
+  #icons-c {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+}
+
+
+/* end */
 /* About html */
 .flex-container {
   width: 100%;
