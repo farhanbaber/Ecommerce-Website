@@ -3142,6 +3142,7 @@ body {
   /* border: 2px solid aqua; */
 }
 
+
 .testimonial {
   width: 100%;
   height: 60vh;
@@ -3537,233 +3538,6 @@ body {
 }
 
 /* Mobile screens (up to 768px) */
-@media only screen and (max-width: 768px) {
-  .new-div-1 {
-    flex-direction: column;
-    margin-top: 3rem;
-    padding: 10px;
-    height: auto !important;
-    min-height: unset !important;
-    overflow: visible !important;
-    position: static !important;
-  }
-
-  .content-one,
-  .content-two {
-    width: 100%;
-    height: auto;
-    min-height: unset;
-    padding: 10px;
-  }
-
-
-  .img-cont {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin-top: 2rem;
-    border-radius: 8px;
-  }
-
-  .img-cont img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    height: auto !important;
-    max-height: none !important
-  }
-
-  .text-cont {
-    height: auto;
-    min-height: unset;
-  }
-
-  .quantity-box {
-    left: 2rem;
-    bottom: 3rem;
-    margin: 1rem auto;
-    position: relative;
-  }
-
-  .line {
-    left: 0;
-    width: 80%;
-    margin: 1rem auto;
-    position: relative;
-    bottom: 1rem;
-  }
-
-  .thumbnail-container {
-    margin-top: 1.5rem;
-    gap: 5px;
-  }
-
-  .thumbnail {
-    width: 60px;
-    height: 40px;
-  }
-
-  .icons {
-    margin-top: 1rem;
-    gap: 10px;
-  }
-
-
-  #icons-x {
-    font-size: 20px;
-    margin: 0.2em;
-    margin: 0.2em 2rem 0.2em 0.2em;
-
-    position: relative;
-    top: 13px;
-  }
-
-
-  .para-content {
-    height: auto;
-    min-height: auto;
-  }
-
-  .content-one,
-  .content-two,
-  .text-cont,
-  .para-content,
-  .img-cont {
-    height: auto !important;
-    min-height: unset !important;
-    overflow: visible !important;
-  }
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .new-div-1 {
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: auto;
-    padding: 15px;
-    margin-top: 5rem;
-    overflow-x: hidden;
-  }
-
-  .content-one,
-  .content-two {
-    width: 48%;
-    height: auto;
-    min-height: 60vh;
-    padding: 15px;
-  }
-
-  .img-cont {
-    width: 100%;
-    max-width: 100%;
-    height: 50vh;
-    margin-top: 2.5rem;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  .img-cont img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-
-  .text-cont {
-    height: auto;
-    min-height: 40vh;
-  }
-
-  .quantity-box {
-    left: 5rem;
-    bottom: 30px;
-  }
-
-  .line {
-    left: 4rem;
-    width: 60%;
-  }
-
-  .thumbnail-container {
-    margin-top: 2rem;
-  }
-
-  .thumbnail {
-    width: 65px;
-    height: 45px;
-  }
-
-  .icons {
-    margin-top: 1.6rem;
-    gap: 15px;
-  }
-
-
-}
-
-@media only screen and (min-width: 1025px) {
-  .new-div-1 {
-    flex-direction: row;
-    height: 90vh;
-    margin-top: 7rem;
-    padding: 10px 20px;
-    overflow-x: hidden;
-  }
-
-  .content-one,
-  .content-two {
-    width: 40%;
-    height: 80vh;
-    padding: 10px 20px;
-  }
-
-  .img-cont {
-    width: 100%;
-    max-width: 400px;
-    height: 60%;
-    margin-top: 3rem;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-
-  .img-cont img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-
-  .text-cont {
-    height: 62vh;
-  }
-
-  .quantity-box {
-    left: 10rem;
-    bottom: 45px;
-  }
-
-  .line {
-    left: 7rem;
-    width: 50%;
-  }
-
-  .thumbnail-container {
-    margin-top: 3rem;
-  }
-
-  .thumbnail {
-    width: 70px;
-    height: 50px;
-  }
-
-  .icons {
-    margin-top: 2rem;
-    gap: 20px;
-  }
-
-
-}
 
 .new-div-2 {
   width: 100%;
@@ -3794,22 +3568,6 @@ body {
   font-family: "Carter One", system-ui;
   color: wheat;
 
-}
-
-@media (max-width: 768px) {
-  .new-div-2 {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    height: auto;
-    overflow-y: hidden;
-  }
-
-  .div-box-1 {
-    width: 90%;
-    height: auto;
-    margin-bottom: 1rem;
-  }
 }
 
 .new-div-3 {
@@ -3851,42 +3609,6 @@ body {
 
 }
 
-/* For tablets and smaller laptops */
-@media (max-width: 1024px) {
-  .new-div-3 {
-    height: auto;
-    padding: 20px 10px;
-  }
-
-  .new-div-img {
-    flex-wrap: wrap;
-    padding: 10px;
-    height: auto;
-  }
-
-  .under-img {
-    width: 45%;
-    height: 30vh;
-    margin: 10px;
-  }
-}
-
-/* For mobile devices */
-@media (max-width: 600px) {
-  .new-div-img {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .under-img {
-    width: 90%;
-    height: 25vh;
-  }
-
-  #new-div-h {
-    font-size: 1.2rem;
-  }
-}
 
 .text-cont {
   width: 100%;
@@ -3965,56 +3687,6 @@ body {
   /* box-shadow: 0 0 0 3px rgba(0, 88, 0, 0.5); */
 }
 
-
-/* For tablets and small laptops */
-@media (max-width: 1024px) {
-  .main-parent-one {
-    flex-wrap: wrap;
-    height: auto;
-  }
-
-  .img-one-cont {
-    width: 45%;
-    height: auto;
-  }
-}
-
-/* For mobile devices */
-@media (max-width: 600px) {
-  .main-parent-one {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .img-one-cont {
-    width: 90%;
-    height: auto;
-    /* border: 2px solid rebeccapurple; */
-    margin-top: 30px;
-  }
-
-  #btx {
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .new-div-4{
-    /* border: 2px solid green; */
-    height: 120vh;
-  }
-}
-
-
-
-
-@media (max-width:600px) {
-  .new-div-5 {
-    /* border : 2px solid green; */
-    margin-top: 64rem;
-
-  }
-
-}
 
 .icons-Y {
   width: 100%;
@@ -4644,19 +4316,20 @@ label {
 
 .new-section-h {
   width: 100%;
-  height: 183vh;
+  height: auto;
   /* border: 2px solid red; */
   margin-top: 6rem;
   display: flex;
   justify-content: center;
   padding: 10px 20px;
   font-family: "Cinzel", serif;
-
+  min-height: 100vh;
+overflow: hidden;
 }
 
 .undr-h {
   width: 95%;
-  height: 178vh;
+  height: auto;
   /* border: 2px solid green; */
   margin-top: 1rem;
   font-family: "Cinzel", serif;
@@ -5062,7 +4735,7 @@ label {
   color: #555;
 }
 
-.slides button {
+/* .slides button {
   padding: 8px 16px;
   background-color: #007bff;
   color: white;
@@ -5071,11 +4744,11 @@ label {
   cursor: pointer;
   font-size: 0.8em;
   transition: background-color 0.3s;
-}
+} */
 
-.slides button:hover {
+/* .slides button:hover {
   background-color: #0056b3;
-}
+} */
 
 @keyframes slide {
   0% {
@@ -5159,7 +4832,44 @@ label {
 .slider {
   display: flex;
   animation: scroll 20s linear infinite;
-  width: fit-content;
+  width: max-content;
+}
+.slider-container {
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* puri site ka extra scroll hatado */
+}
+
+.slider-container {
+  width: 100%;
+  overflow-x: hidden; /* slider section se scroll remove */
+  position: relative;
+  padding: 0; /* padding kam kardo */
+}
+
+.slider {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  width: 100%; /* fit-content hatao */
+}
+
+.slides {
+  flex: 0 0 auto;
+  width: 180px;   /* thoda chhota kar diya */
+  margin: 0 5px;  /* margin kam kar diya */
+}
+
+.slider-img {
+  width: 100%;
+  height: auto;
+  padding: 0; /* extra padding hata di */
 }
 
 /* erroe */
