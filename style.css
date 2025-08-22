@@ -3845,7 +3845,7 @@ body>*:last-child {
     /* display: block;     */
          /* agar inline element hai to block bana do */
          position: relative;
-         right: 5.2rem;
+         right: 6rem;
   }
 }
 
