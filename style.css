@@ -3419,7 +3419,9 @@ body>*:last-child {
 }
 @media (max-width: 600px) {
   #fontd {
-    padding: 2px 20px !important;
+    padding: 2px 20px;
+    position: relative;
+    left: 2rem;
   }
 }
 
