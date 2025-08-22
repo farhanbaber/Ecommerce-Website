@@ -3834,6 +3834,14 @@ body>*:last-child {
     font-size: 20px;
     margin-top: 10px;
   }
+  #font{
+    position: relative;
+    left: 2rem;
+  }
+  #icons-x{
+    position: relative;
+    left: 10px;
+  }
 
 }
 
@@ -4220,7 +4228,7 @@ label {
 
   .flex-container {
     /* border: 2px solid red; */
-    height: 210vh;
+    height: 190vh;
     position: relative;
     bottom: 40px;
   }
