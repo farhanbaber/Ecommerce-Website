@@ -4689,7 +4689,7 @@ label {
   #font {
     font-size: 1rem;
     position: relative;
-    bottom: 30px;
+    bottom: 24px;
 
   }
 
@@ -5070,11 +5070,13 @@ label {
 
 @media (max-width: 600px) {
   #font-x {
-    display: block;
-    margin: 10px auto;
+     display: block;
+    margin-left: calc(50% + 2rem); /* center + 2rem right */
+    transform: translateX(-50%);   /* center adjust */
     text-align: center;
-        transform: translateX(2rem); /* 👈 center se 2rem right */
-
+    padding: 12px 20px;            /* styling */
+    font-size: 16px;
+    cursor: pointer;
   }
 }
 #font-x {
