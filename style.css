@@ -4689,7 +4689,7 @@ label {
   #font {
     font-size: 1rem;
     position: relative;
-    bottom: 10px;
+    bottom: 30px;
 
   }
 
@@ -4797,16 +4797,7 @@ label {
 
 }
 
-/* .customCard button:hover {
-    background-color: rgb(255, 241, 216);
-    color: #111;
-    transition: 0.2s ease-in-out all;
-}
-.customCard button:active{
-  transform: scale(0.90);
-      transition: 0.2s ease-in-out all;
 
-} */
 
 .customCard button:active {
   transform: scale(0.9);
@@ -5076,11 +5067,14 @@ label {
 #font:focus {
   outline: none;
 }
+
 @media (max-width: 600px) {
   #font-x {
     display: block;
     margin: 10px auto;
     text-align: center;
+        transform: translateX(2rem); /* 👈 center se 2rem right */
+
   }
 }
 #font-x {
