@@ -3844,6 +3844,8 @@ body>*:last-child {
     text-align: center;     /* text center */
     /* display: block;     */
          /* agar inline element hai to block bana do */
+         position: relative;
+         right: 4rem;
   }
 }
 
