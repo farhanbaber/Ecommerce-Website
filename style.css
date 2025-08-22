@@ -3824,6 +3824,8 @@ body>*:last-child {
     justify-content: center; /* sab content center ho jayega */
     flex-wrap: wrap;
     gap: 1rem;
+    flex-direction: column;
+    align-items: center;
   }
 
   .cont-one {
@@ -3837,11 +3839,10 @@ body>*:last-child {
   }
 
   #font {
-    position: static;       /* relative hata do */
-      margin: 10px auto 0 auto; /* top = 10px, left/right auto, bottom = 0 */
+      margin: 10px; /* top = 10px, left/right auto, bottom = 0 */
 
     text-align: center;     /* text center */
-    display: block;    
+    /* display: block;     */
          /* agar inline element hai to block bana do */
   }
 }
