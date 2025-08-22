@@ -3817,10 +3817,11 @@ body>*:last-child {
   }
 }
 
-/* Mobile Devices */
 @media (max-width: 600px) {
   .under-icon {
     width: 100%;
+    display: flex;
+    justify-content: center; /* sab content center ho jayega */
     flex-wrap: wrap;
     gap: 1rem;
   }
@@ -3834,15 +3835,13 @@ body>*:last-child {
     font-size: 20px;
     margin-top: 10px;
   }
-  #font{
-    position: relative;
-    right: 4.5rem;
-  }
-  #icons-x{
-    position: relative;
-    right: 25px;
-  }
 
+  #font {
+    position: static;       /* relative hata do */
+    margin: 0 auto;         /* horizontal center */
+    text-align: center;     /* text center */
+    display: block;         /* agar inline element hai to block bana do */
+  }
 }
 
 /* ============================= */
