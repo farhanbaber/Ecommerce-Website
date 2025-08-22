@@ -4283,52 +4283,6 @@ label {
     overflow-x: hidden;
   }
 }
-/* Sabhi mobile aur chhoti screens ke liye */
-@media (max-width: 1024px) {
-  .fluid-six {
-    padding: 0;
-    height: auto;
-    flex-direction: column;
-    position: relative;
-    bottom: 2rem;
-  }
-
-  .sticky-img {
-    width: 100%;
-    height: 50vh;
-    margin-top: 0;
-    background-attachment: scroll; /* fixed bg mobile pr kaam nahi karta */
-    border-radius: 0;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-  }
-
-  #h-fluid {
-    position: absolute;
-    top: 60%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
-    padding: 10px 20px;
-    text-align: center;
-    color: white;
-    z-index: 2;
-    font-family: "Edu AU VIC WA NT Arrows", cursive;
-  }
-
-  .sticky-img::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 1;
-    border-radius: 0;
-  }
-}
 
 .fluid-six {
   width: 100%;
@@ -4368,6 +4322,7 @@ label {
     position: relative;
     /* border: 2px solid red; */
     bottom: 2rem;
+    display: none;
   }
 
   .sticky-img {
@@ -4380,6 +4335,7 @@ label {
     position: sticky;
     top: 0;
     z-index: 1;
+    display: none;
   }
 
   #h-fluid {
@@ -4409,59 +4365,6 @@ label {
   }
 }
 /*  */
-/* Tablet screens (up to iPad) */
-@media (max-width: 1024px) {
-  .fluid-six {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .sticky-img {
-    width: 100%;
-    height: 50vh;
-    background-attachment: scroll;
-    position: sticky;
-    top: 0;
-  }
-
-  #h-fluid {
-    font-size: 40px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-/* Mid-size mobiles */
-@media (max-width: 600px) {
-  #h-fluid {
-    font-size: 28px;
-    padding: 8px 16px;
-    top: 55%;
-    left: 50%;
-  }
-}
-
-/* Small mobiles (iPhone SE, Android small screens) */
-@media (max-width: 480px) {
-  .sticky-img {
-    height: 45vh;
-  }
-
-  #h-fluid {
-    font-size: 24px;
-    top: 50%;
-    left: 50%;
-  }
-}
-
-/* Very small screens (old phones) */
-@media (max-width: 375px) {
-  #h-fluid {
-    font-size: 20px;
-    padding: 6px 12px;
-  }
-}
 
 /* new section of shop */
 
