@@ -3325,7 +3325,8 @@ body {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
-.new-section-h{
+
+.new-section-h {
   /* border: 2px solid red; */
   /* margin-top: 4rem; */
   position: relative;
@@ -3377,13 +3378,15 @@ body>*:last-child {
   padding: 2px 20px;
   font-size: 16px;
   cursor: pointer;
-  width: 80%;           /* screen ke 80% tak width le lega */
-  max-width: 250px;     /* zyada bada na ho desktop pe */
+  width: 80%;
+  /* screen ke 80% tak width le lega */
+  max-width: 250px;
+  /* zyada bada na ho desktop pe */
   border-radius: 8px;
   border: none;
   background-color: rgb(0, 88, 0);
   color: rgb(255, 224, 171);
-    overflow: hidden;
+  overflow: hidden;
   transition: transform 0.6s ease, box-shadow 0.6s ease, background 0.8s ease;
   transform: perspective(600px) rotateX(0deg) rotateY(0deg);
 }
@@ -3417,11 +3420,12 @@ body>*:last-child {
 #fontd:focus {
   outline: none;
 }
+
 @media (max-width: 600px) {
   #fontd {
     padding: 2px 20px;
     position: relative;
-    right: 3rem;
+    left: 6rem;
   }
 }
 
@@ -3877,7 +3881,8 @@ body>*:last-child {
   .under-icon {
     width: 100%;
     display: flex;
-    justify-content: center; /* sab content center ho jayega */
+    justify-content: center;
+    /* sab content center ho jayega */
     flex-wrap: wrap;
     gap: 1rem;
     flex-direction: column;
@@ -3895,15 +3900,18 @@ body>*:last-child {
   }
 
   #fontd {
-      margin: 10px; /* top = 10px, left/right auto, bottom = 0 */
+    margin: 10px;
+    /* top = 10px, left/right auto, bottom = 0 */
 
-    text-align: center;     /* text center */
+    text-align: center;
+    /* text center */
     /* display: block;     */
-         /* agar inline element hai to block bana do */
-         position: relative;
-         right: 6rem;
+    /* agar inline element hai to block bana do */
+    position: relative;
+    right: 6rem;
   }
-   .cont-two {
+
+  .cont-two {
     display: none;
   }
 }
@@ -4435,6 +4443,7 @@ label {
     border-radius: 0;
   }
 }
+
 /*  */
 
 /* new section of shop */
@@ -4527,7 +4536,8 @@ label {
   margin-top: 20px;
   /* border: 2px solid red; */
 }
-.checkout:active{
+
+.checkout:active {
   transform: scale(0.90);
 }
 
@@ -4847,7 +4857,8 @@ label {
 }
 
 .customCard button {
-  background-color:  rgb(81, 110, 81);;
+  background-color: rgb(81, 110, 81);
+  ;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -4855,7 +4866,7 @@ label {
   border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
-      transition: 0.2s ease-in-out all;
+  transition: 0.2s ease-in-out all;
 
 }
 
