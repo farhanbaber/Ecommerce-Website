@@ -3836,11 +3836,11 @@ body>*:last-child {
   }
   #font{
     position: relative;
-    left: 2rem;
+    right: 4rem;
   }
   #icons-x{
     position: relative;
-    left: 10px;
+    right: 15px;
   }
 
 }
