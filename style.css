@@ -3838,9 +3838,11 @@ body>*:last-child {
 
   #font {
     position: static;       /* relative hata do */
-    margin: 0 auto;         /* horizontal center */
+      margin: 10px auto 0 auto; /* top = 10px, left/right auto, bottom = 0 */
+
     text-align: center;     /* text center */
-    display: block;         /* agar inline element hai to block bana do */
+    display: block;    
+         /* agar inline element hai to block bana do */
   }
 }
 
@@ -5072,5 +5074,61 @@ label {
 }
 
 #font:focus {
+  outline: none;
+}
+@media (max-width: 600px) {
+  #font-x {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+  }
+}
+#font-x {
+  display: block;         /* inline se block banao */
+  margin: 10px auto;      /* auto se left-right center */
+  text-align: center;     /* button ke andar text bhi center */
+  padding: 2px 20px;     /* thoda space */
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+    background-color: rgb(0, 88, 0);
+      cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.6s ease, box-shadow 0.6s ease, background 0.8s ease;
+  transform: perspective(600px) rotateX(0deg) rotateY(0deg);
+  color: rgb(255, 241, 216);
+  border-radius: 10px;
+  width: 100%;           /* screen ke 80% tak width le lega */
+  max-width: 250px;     /* zyada bada na ho desktop pe */
+
+}
+
+#font-x:hover {
+  transform: perspective(600px) rotateX(3deg) rotateY(3deg);
+}
+
+#font-x:active {
+  transform: perspective(600px) rotateX(3deg) rotateY(3deg) scale(0.9);
+}
+
+#font-x::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
+  transition: left 0.8s ease;
+}
+
+#font-x:hover::before {
+  left: 100%;
+}
+
+#font-x:focus {
   outline: none;
 }
