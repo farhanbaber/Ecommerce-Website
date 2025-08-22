@@ -3838,7 +3838,7 @@ body>*:last-child {
     margin-top: 10px;
   }
 
-  #font {
+  #fontd {
       margin: 10px; /* top = 10px, left/right auto, bottom = 0 */
 
     text-align: center;     /* text center */
