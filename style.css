@@ -3418,6 +3418,12 @@ body>*:last-child {
   outline: none;
 }
 @media (max-width: 600px) {
+  #fontd {
+    padding: 2px 20px !important;
+  }
+}
+
+@media (max-width: 600px) {
   .icons {
     display: none;
   }
@@ -3894,6 +3900,9 @@ body>*:last-child {
          /* agar inline element hai to block bana do */
          position: relative;
          right: 6rem;
+  }
+   .cont-two {
+    display: none;
   }
 }
 
@@ -4740,7 +4749,7 @@ label {
   #font {
     font-size: 1rem;
     position: relative;
-    bottom: 18px;
+    bottom: 15px;
 
   }
 
@@ -5120,3 +5129,9 @@ label {
 }
 
 
+
+@media (max-width: 600px) {
+  .cont-two {
+    display: none;
+  }
+}
