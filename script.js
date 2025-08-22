@@ -104,3 +104,40 @@ let x = setInterval(function () {
     timers[2].innerHTML = minutes.toString().padStart(2, "0");
     timers[3].innerHTML = seconds.toString().padStart(2, "0");
 }, 1000);
+
+  const cardsWrapper = document.getElementById('cardsWrapper');
+    const images = [
+      'assets/main head img two.jpg',
+      'assets/Hero section img -three.jpg',
+      'assets/main img head one.png',
+      'assets/main img.webp'
+    ];
+
+    function createCard(index) {
+      const card = document.createElement('div');
+      card.className = 'customCard';
+      const imgSrc = images[index % images.length];
+      card.innerHTML = `
+        <img src="${imgSrc}" alt="Card Image">
+        <p>From timeless tables to modern décor, our collection reflects both tradition and style</p>
+     <button>Shop Now</button>
+      `;
+      return card;
+    }
+
+    for (let i = 0; i < 10; i++) {
+      cardsWrapper.appendChild(createCard(i));
+    }
+
+    const cards = document.querySelectorAll('.customCard');
+    cards.forEach(card => {
+      cardsWrapper.appendChild(card.cloneNode(true));
+    });
+
+    cardsWrapper.addEventListener('mouseenter', () => {
+      cardsWrapper.style.animationPlayState = 'paused';
+    });
+
+    cardsWrapper.addEventListener('mouseleave', () => {
+      cardsWrapper.style.animationPlayState = 'running';
+    });

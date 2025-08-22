@@ -854,18 +854,25 @@ body {
     text-align: right;
   }
 }
+
 /* Mobile screens */
 @media only screen and (max-width: 768px) {
   .product-one {
-    width: 90%;         /* full width on mobile */
-    height: auto;       /* box height adjusts to content */
-    margin: 10px auto;  /* center */
+    width: 90%;
+    /* full width on mobile */
+    height: auto;
+    /* box height adjusts to content */
+    margin: 10px auto;
+    /* center */
   }
 
   #asset-1 {
-    width: 100%;        /* full responsive */
-    height: auto;       /* maintain natural ratio */
-    object-fit: contain; /* no cropping */
+    width: 100%;
+    /* full responsive */
+    height: auto;
+    /* maintain natural ratio */
+    object-fit: contain;
+    /* no cropping */
   }
 }
 
@@ -2863,7 +2870,8 @@ body {
     padding: 0.2rem 0.6rem;
     margin: 0.3rem 0;
   }
-  .main-parent-one{
+
+  .main-parent-one {
     /* border: 2px solid blue; */
     background-color: whitesmoke;
     height: 160vh;
@@ -3292,12 +3300,45 @@ body {
   }
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  overflow-x: hidden;
+  /* horizontal scroll disable */
+  overflow-y: auto;
+  /* sirf ek normal vertical scroll */
+}
+
+/* ✅ jahan bhi min-height:100vh + margin-top hai unko override kar do */
+.new-section-h,
+.new-section,
+.gallery-section,
+.parent-section,
+.second-parent,
+.third-parent,
+.new-parent,
+.testimonial {
+  min-height: auto !important;
+  height: auto !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* ✅ last section ke neeche extra gap remove */
+body>*:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
 /* new page of About */
 /* About page */
 
 .new-div-1 {
   width: 100%;
-  height: 75vh;
+  height: 90vh;
   /* border: 2px solid red; */
   margin-top: 7rem;
   display: flex;
@@ -3315,7 +3356,7 @@ body {
 
 .content-two {
   width: 40%;
-  height: 80vh;
+  height: 88vh;
   /* border: 2px solid green; */
   padding: 10px 20px;
   background-color: whitesmoke;
@@ -3409,9 +3450,9 @@ body {
   transform: scale(0.90);
 }
 
-.content-one {
+.content-ones {
   width: 40%;
-  height: 85vh;
+  height: 87vh;
   /* border: 2px solid green; */
   padding: 10px 20px;
   display: flex;
@@ -3443,7 +3484,7 @@ body {
 
 
 
-.content-one {
+.content-ones {
   width: 40%;
   height: 80vh;
   padding: 10px 20px;
@@ -3550,8 +3591,7 @@ body {
   background-color: whitesmoke;
   font-family: "Cinzel", serif;
   position: relative;
-  bottom: 1rem;
-
+  bottom: 2rem;
 
 
 }
@@ -3791,10 +3831,12 @@ body {
   }
 
 }
+
 /* ============================= */
 /* TABLETS (up to 1024px) */
 /* ============================= */
 @media only screen and (max-width: 1024px) {
+
   /* About top section */
   .new-div-1 {
     flex-direction: row;
@@ -3804,7 +3846,7 @@ body {
     margin-top: 4rem;
   }
 
-  .content-one,
+  .content-ones,
   .content-two {
     width: 48%;
     height: auto;
@@ -3887,6 +3929,7 @@ body {
 /* MOBILE (up to 600px) */
 /* ============================= */
 @media only screen and (max-width: 600px) {
+
   /* About top section */
   .new-div-1 {
     flex-direction: column;
@@ -3895,7 +3938,7 @@ body {
     height: auto !important;
   }
 
-  .content-one,
+  .content-ones,
   .content-two {
     width: 100%;
     height: auto;
@@ -3962,12 +4005,14 @@ body {
   }
 
   .new-div-4 {
-    height: auto; /* fixed: no forced height */
+    height: auto;
+    /* fixed: no forced height */
   }
 
   /* follow us section */
   .new-div-5 {
-    margin-top: 2rem; /* removed 64rem! */
+    margin-top: 2rem;
+    /* removed 64rem! */
     height: auto;
     text-align: center;
   }
@@ -4324,7 +4369,7 @@ label {
   padding: 10px 20px;
   font-family: "Cinzel", serif;
   min-height: 100vh;
-overflow: hidden;
+  overflow: hidden;
 }
 
 .undr-h {
@@ -4665,282 +4710,124 @@ overflow: hidden;
 }
 
 .slider-img {
-  width: 100%;
-  height: 50vh;
-  /* border: 2px solid red; */
-  padding: 10px 20px;
 
-}
-
-.slider-section {
-  padding: 2rem 1rem;
-  text-align: center;
-  font-family: "Cinzel", serif;
-}
-
-.slider-heading {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.slider-para {
-  font-size: 1rem;
-  margin-bottom: 2rem;
-  color: #555;
-}
-
-#font {
-  color: white;
-}
-
-.img-slider-X {
-  width: 100%;
-  height: 42vh;
-  /* border: 2px solid aqua; */
-}
-
-.slider-container {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  padding: 20px 0;
-}
-
-.slider {
+  margin: 0;
   display: flex;
-  animation: slide 8s infinite linear;
-  will-change: transform;
-}
-
-/* error */
-.slides {
-  flex: 0 0 auto;
-  width: 200px;
-  margin: 0 10px;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background-color: #ffffff;
   font-family: "Cinzel", serif;
 
+
+
 }
 
-.slides img {
+.cardContainer {
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+  background-color: whitesmoke;
+  padding: 20px;
+
+}
+
+.cards-wrapper {
+  display: flex;
+  animation: slide 20s linear infinite;
+}
+
+.customCard {
+  flex: 0 0 auto;
+  width: 250px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+}
+
+.customCard img {
   width: 100%;
   height: 150px;
   object-fit: cover;
-  border-radius: 8px;
 }
 
-.slides p {
-  margin: 8px 0;
-  font-size: 0.9em;
-  color: #555;
+.customCard p {
+  padding: 10px;
+  font-size: 14px;
+  margin: 0;
 }
 
-/* .slides button {
-  padding: 8px 16px;
-  background-color: #007bff;
+.customCard button {
+  background-color:  rgb(81, 110, 81);;
   color: white;
   border: none;
+  padding: 10px 20px;
+  margin: 10px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 0.8em;
-  transition: background-color 0.3s;
-} */
+  font-size: 14px;
+      transition: 0.2s ease-in-out all;
 
-/* .slides button:hover {
-  background-color: #0056b3;
-} */
+}
 
+.customCard button:hover {
+    background-color: rgb(255, 241, 216);
+    color: #111;
+    transition: 0.2s ease-in-out all;
+}
+.customCard button:active{
+  transform: scale(0.90);
+      transition: 0.2s ease-in-out all;
+
+}
 @keyframes slide {
   0% {
     transform: translateX(0);
   }
 
   100% {
-    transform: translateX(calc(-220px * 4));
-  }
-}
-
-#visit {
-  background-color: rgb(81, 110, 81);
-  transition: 0.2s ease-in-out;
-}
-
-#visit::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg,
-      transparent,
-      rgba(255, 255, 255, 0.2),
-      transparent);
-  transition: left 0.8s ease;
-  z-index: -1;
-}
-
-#visit:hover,
-#visit:focus {
-  background-color: rgb(80, 43, 43);
-  color: white;
-  transform: perspective(600px) rotateX(3deg) rotateY(3deg);
-}
-
-#visit:hover::before,
-#visit:focus::before {
-  left: 100%;
-}
-
-#visit:active {
-  transform: perspective(600px) rotateX(3deg) rotateY(3deg) scale(0.9);
-  transition: transform 0.8s ease, box-shadow 0.8s ease, background-color 0.8s ease, color 0.8s ease;
-}
-
-
-#visit::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg,
-      transparent,
-      rgba(255, 255, 255, 0.2),
-      transparent);
-  transition: left 0.8s ease;
-  z-index: -1;
-}
-
-#visit:hover,
-#visit:focus {
-  background-color: rgba(255, 224, 171);
-  color: rgb(81, 110, 81);
-
-}
-
-#visit:hover::before,
-#visit:focus::before {
-  left: 100%;
-}
-
-#visit:active {
-  transition: transform 0.8s ease, box-shadow 0.8s ease, background-color 0.8s ease, color 0.8s ease;
-}
-
-.slider {
-  display: flex;
-  animation: scroll 20s linear infinite;
-  width: max-content;
-}
-.slider-container {
-  overflow-x: hidden;
-}
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* puri site ka extra scroll hatado */
-}
-
-.slider-container {
-  width: 100%;
-  overflow-x: hidden; /* slider section se scroll remove */
-  position: relative;
-  padding: 0; /* padding kam kardo */
-}
-
-.slider {
-  display: flex;
-  animation: scroll 20s linear infinite;
-  width: 100%; /* fit-content hatao */
-}
-
-.slides {
-  flex: 0 0 auto;
-  width: 180px;   /* thoda chhota kar diya */
-  margin: 0 5px;  /* margin kam kar diya */
-}
-
-.slider-img {
-  width: 100%;
-  height: auto;
-  padding: 0; /* extra padding hata di */
-}
-
-/* erroe */
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.slider-container:hover .slider {
-  animation-play-state: paused;
-}
-
-@media (max-width: 1024px) {
-  .slides {
-    width: 160px;
-    margin: 0 8px;
-  }
-
-  .slides img {
-    height: 130px;
-  }
-
-  .slides p {
-    font-size: 0.85em;
+    transform: translateX(-100%);
   }
 }
 
 @media (max-width: 768px) {
-
-  .slides {
-    width: 140px;
-    margin: 0 6px;
+  .customCard {
+    width: 200px;
   }
 
-  .slides img {
-    height: 110px;
+  .customCard img {
+    height: 120px;
   }
 
-  .slides p {
-    font-size: 0.8em;
+  .customCard p {
+    font-size: 12px;
   }
 
-  .slides button {
-    font-size: 0.75em;
-    padding: 6px 12px;
+  .customCard button {
+    padding: 8px 16px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 480px) {
-  .slides {
-    width: 120px;
-    margin: 0 5px;
+  .customCard {
+    width: 150px;
   }
 
-  .slides img {
-    height: 90px;
+  .customCard img {
+    height: 100px;
   }
 
-  .slides p {
-    font-size: 0.75em;
+  .customCard p {
+    font-size: 10px;
   }
 
-  .slides button {
-    font-size: 0.7em;
-    padding: 5px 10px;
+  .customCard button {
+    padding: 6px 12px;
+    font-size: 10px;
   }
 }
 
