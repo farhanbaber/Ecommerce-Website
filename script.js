@@ -68,8 +68,10 @@ function sub() {
       });
     }); 
 
-
-let countDownDate = new Date("Aug 20, 2025 23:59:59").getTime();
+// 2 digit only countdown
+let countDownDate = new Date();
+countDownDate.setFullYear(countDownDate.getFullYear() + 20); // Example 20 years future
+countDownDate = countDownDate.getTime();
 
 let timers = document.querySelectorAll(".timer");
 
@@ -85,7 +87,7 @@ let x = setInterval(function () {
     }
 
     // Calculation
-    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24)) % 100;  // 🔥 sirf 2 digit rakhega
     let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
@@ -156,18 +158,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // buble
-  const bubbles = document.querySelector('.bubbles');
-  const footer = document.getElementById('footer');
-
-  window.addEventListener('scroll', () => {
-    const footerTop = footer.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-
-    if (footerTop <= windowHeight) {
-      // agar footer viewport me aa gaya → bubbles band karo
-      bubbles.classList.add('hidden');
-    } else {
-      // warna bubbles chalte rahen
-      bubbles.classList.remove('hidden');
-    }
-  });
