@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.getElementById("navbar");
-  const page = document.body.id || "unknown"; // Fallback for missing body ID
+  const page = document.body.id || "unknown"; 
   const toggler = document.querySelector(".navbar-toggler");
 
   if (!navbar) {
@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
 
-  // Apply glass effect immediately for non-home/product pages
   if (page !== "home" && page !== "product") {
     navbar.classList.add("glass");
   } else {
@@ -18,14 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Apply glass effect when hamburger menu is clicked
   if (toggler) {
     toggler.addEventListener("click", function () {
       const isExpanded = toggler.getAttribute("aria-expanded") === "true";
       if (isExpanded) {
         navbar.classList.add("glass");
       } else if (page === "home" || page === "product") {
-        // Only remove glass if not scrolled past triggerHeight on home/product
         if (window.scrollY <= triggerHeight - 50) {
           navbar.classList.remove("glass");
         }
@@ -60,13 +57,10 @@ function sub() {
 
       thumbnails.forEach(thumbnail => {
         thumbnail.addEventListener('click', () => {
-          // Remove active class from all thumbnails
           thumbnails.forEach(thumb => thumb.classList.remove('active'));
           
-          // Add active class to clicked thumbnail
           thumbnail.classList.add('active');
           
-          // Update main image source
           const newSrc = thumbnail.querySelector('img').getAttribute('data-src');
           mainImage.src = newSrc;
           mainImage.alt = thumbnail.querySelector('img').alt;
@@ -75,10 +69,8 @@ function sub() {
     }); 
 
 
-    // Target date set karein (apna sale end date lagao)
 let countDownDate = new Date("Aug 20, 2025 23:59:59").getTime();
 
-// Sare .timer spans nikal lo
 let timers = document.querySelectorAll(".timer");
 
 let x = setInterval(function () {
@@ -98,7 +90,6 @@ let x = setInterval(function () {
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Update spans
     timers[0].innerHTML = days.toString().padStart(2, "0");
     timers[1].innerHTML = hours.toString().padStart(2, "0");
     timers[2].innerHTML = minutes.toString().padStart(2, "0");
@@ -143,20 +134,24 @@ let x = setInterval(function () {
     });
     // 
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const loader = document.getElementById("loader-wrapper");
-//   const mainContent = document.getElementById("main-content");
+    
 
-//   function handleLoader() {
-//     if (!loader || !mainContent) {
-//       console.error("❌ Loader or main content not found!");
-//       return;
-//     }
+document.addEventListener("DOMContentLoaded", function () {
+  const loader = document.getElementById("loader-wrapper");
+  const mainContent = document.getElementById("main-content");
 
-//     loader.style.display = "none";
-//     mainContent.style.display = "block";
-//     console.log("✅ Loader removed, content visible");
-//   }
+  function handleLoader() {
+    if (!loader || !mainContent) {
+      console.error(" Loader or main content not found!");
+      return;
+    }
 
-//   setTimeout(handleLoader, 3000);
-// });
+    loader.style.display = "none";
+    mainContent.style.display = "block";
+    console.log("Loader removed, content visible");
+  }
+
+  setTimeout(handleLoader, 3000);
+});
+
+

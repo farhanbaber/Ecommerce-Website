@@ -5159,13 +5159,14 @@ label {
     display: none;
   }
 }
+
 .pages-mover {
   width: 100%;
   display: flex;
-  justify-content: center;   /* center horizontally */
-  align-items: center;       /* center vertically */
-  flex-wrap: wrap;           /* wrap in multiple rows on small screens */
-  gap: 1rem;                 /* spacing between buttons */
+  justify-content: center;   
+  align-items: center;       
+  flex-wrap: wrap;           
+  gap: 1rem;                 
   margin: 2rem auto;
   padding: 0 10px;
 }
@@ -5188,11 +5189,6 @@ label {
   overflow: hidden;
 }
 
-/* .pages-mover a:hover {
-  transform: scale(1.1);
-      background: rgb(81, 110, 81);
-      color: wheat;
-} */
 
 .pages-mover a:active {
   transform: scale(0.9);
@@ -5202,7 +5198,7 @@ label {
   transform: perspective(600px) rotateX(3deg) rotateY(3deg);
   /* box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3); */
   background-color: rgb(43, 80, 43);
-  color: white;
+  color: wheat;
 }
 
 .pages-mover a::before {
@@ -5228,7 +5224,7 @@ label {
 }
 
 
-/* ✅ Responsive for mobile */
+/*  Responsive for mobile */
 @media (max-width: 600px) {
   .pages-mover {
     gap: 0.5rem;
@@ -5241,7 +5237,8 @@ label {
 }
 
 
-/* Loader Styles */
+
+Loader Styles
     /* body, html {
       margin: 0;
       padding: 0;
@@ -5312,3 +5309,35 @@ label {
      #furnix{
       overflow-y: hidden;
      }
+ section {
+  position: relative;
+  z-index: 1;
+  overflow: hidden; /* extra background na nikle */
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to right,
+    rgba(0,0,0,0.2) 0px,   /* dark line */
+    rgba(0,0,0,0.2) 2px,   /* line thickness */
+    transparent 2px,
+    transparent 80px       /* gap */
+  );
+  z-index: -1;
+  pointer-events: none;
+
+  /* animation */
+  animation: moveLines 5s linear infinite;
+}
+
+@keyframes moveLines {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 80px 0; /* jitna gap hai utna shift hoga */
+  }
+}
