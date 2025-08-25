@@ -155,3 +155,19 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// buble
+  const bubbles = document.querySelector('.bubbles');
+  const footer = document.getElementById('footer');
+
+  window.addEventListener('scroll', () => {
+    const footerTop = footer.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (footerTop <= windowHeight) {
+      // agar footer viewport me aa gaya → bubbles band karo
+      bubbles.classList.add('hidden');
+    } else {
+      // warna bubbles chalte rahen
+      bubbles.classList.remove('hidden');
+    }
+  });
