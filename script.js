@@ -141,3 +141,22 @@ let x = setInterval(function () {
     cardsWrapper.addEventListener('mouseleave', () => {
       cardsWrapper.style.animationPlayState = 'running';
     });
+    // 
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const loader = document.getElementById("loader-wrapper");
+//   const mainContent = document.getElementById("main-content");
+
+//   function handleLoader() {
+//     if (!loader || !mainContent) {
+//       console.error("❌ Loader or main content not found!");
+//       return;
+//     }
+
+//     loader.style.display = "none";
+//     mainContent.style.display = "block";
+//     console.log("✅ Loader removed, content visible");
+//   }
+
+//   setTimeout(handleLoader, 3000);
+// });
