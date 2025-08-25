@@ -5359,23 +5359,11 @@ section::before {
   animation: moveLines 5s linear infinite;
 }
 
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  section::before {
-    background: repeating-linear-gradient(
-      to right,
-      rgba(0,0,0,0.2) 0px,
-      rgba(0,0,0,0.2) 1px, /* thinner line for mobile */
-      transparent 1px,
-      transparent 40px       /* smaller gap for mobile */
-    );
-  }
-}
-
-/* Optional: if content overlaps lines, add padding to section */
 @media (max-width: 768px) {
   section {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    min-height: auto; /* let height grow naturally with stacked content */
+  }
+  section::before {
+    background-size: 40px 100%; /* smaller gap for mobile */
   }
 }
