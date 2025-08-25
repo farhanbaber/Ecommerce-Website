@@ -2228,21 +2228,21 @@ body {
   filter: brightness(0.5);
   transition: 0.2s ease-in-out all;
   cursor: pointer;
-  transform: translateY(-20px);
+  /* transform: translateY(-20px); */
 }
 
 .top-right-img:hover img {
   filter: brightness(0.5);
   transition: 0.2s ease-in-out all;
   cursor: pointer;
-  transform: translateX(-20px);
+  /* transform: translateX(-20px); */
 }
 
 .bottom-right-img:hover img {
   filter: brightness(0.5);
   transition: 0.2s ease-in-out all;
   cursor: pointer;
-  transform: translateY(-20px);
+  /* transform: translateY(-20px); */
 }
 
 .parent-section {
@@ -5305,3 +5305,10 @@ label {
     #main-content.show {
       opacity: 1;
     } */
+     #product,#home{
+      overflow-y: hidden;
+     }
+     
+     #furnix{
+      overflow-y: hidden;
+     }
