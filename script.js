@@ -144,27 +144,4 @@ let x = setInterval(function () {
 
     
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const toggler = document.querySelector(".navbar-toggler");
-//   const navMenu = document.getElementById("navbarTogglerDemo02");
 
-//   if (toggler && navMenu) {
-//     toggler.addEventListener("click", function () {
-//       navMenu.classList.toggle("show");
-//     });
-//   }
-// });
-
-// // 
-
-document.addEventListener("DOMContentLoaded", function () {
-  const toggler = document.querySelector(".custom-toggler");
-  const navMenu = document.getElementById("navbarTogglerDemo02");
-
-  if (toggler && navMenu) {
-    toggler.addEventListener("click", function () {
-      navMenu.classList.toggle("show");
-      toggler.classList.toggle("active"); // animate lines to X
-    });
-  }
-});
