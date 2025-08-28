@@ -155,4 +155,21 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// 
+document.addEventListener("DOMContentLoaded", function () {
+  const toggler = document.querySelector(".navbar-toggler");
+  const navMenu = document.getElementById("navbarTogglerDemo02");
+
+  if (toggler && navMenu) {
+    toggler.addEventListener("click", function () {
+      const isExpanded = toggler.getAttribute("aria-expanded") === "true";
+      if (isExpanded) {
+        navMenu.classList.add("show");   // slide in
+      } else {
+        navMenu.classList.remove("show"); // slide out
+      }
+    });
+  }
+});
+
 
