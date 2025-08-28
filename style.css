@@ -5490,3 +5490,22 @@ section::before {
 #logo {
   font-size: 1.8rem; /* logo text ki height bhi control karo */
 }
+
+/* Offcanvas style for mobile menu */
+#navbarTogglerDemo02 {
+  position: fixed;
+  top: 0;
+  left: -100%; /* start hidden from left */
+  width: 100%; /* full screen */
+  height: 100vh; /* full height */
+  background: #fff; /* white background */
+  transition: left 0.4s ease-in-out; /* smooth animation */
+  padding-top: 4rem; /* space for brand */
+  text-align: center;
+  z-index: 9999;
+}
+
+/* When menu is shown */
+#navbarTogglerDemo02.show {
+  left: 0;
+}
