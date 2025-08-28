@@ -1,6 +1,10 @@
  const loader = document.getElementById("loader-wrapper");
         const mainContent = document.getElementById("main-content");
 
+        // Check if the current page is the main page (index.html)
+        const isMainPage = window.location.pathname.endsWith("index.html") || window.location.pathname === "/" || window.location.pathname === "";
+        const loaderDuration = isMainPage ? 4000 : 500; // 4s for main page, 2s for others
+
         setTimeout(() => {
             loader.classList.add("fade-out");
             // Wait for the fade-out and scroll transition to complete before hiding
@@ -8,7 +12,7 @@
                 loader.style.display = "none";
                 mainContent.classList.add("show");
             }, 800); // Matches the transition duration in CSS (0.8s)
-        }, 3000);
+        }, loaderDuration); // Dynamic delay based on page
 document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.getElementById("navbar");
   const page = document.body.id || "unknown"; 
