@@ -1,3 +1,9 @@
+// const loader = document.getElementById("loader-wrapper");
+// setTimeout(() => {
+//    loader.style.display = "none"
+// }, 3000)
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.getElementById("navbar");
   const page = document.body.id || "unknown"; 
@@ -137,24 +143,6 @@ let x = setInterval(function () {
     // 
 
     
-
-document.addEventListener("DOMContentLoaded", function () {
-  const loader = document.getElementById("loader-wrapper");
-  const mainContent = document.getElementById("main-content");
-
-  function handleLoader() {
-    if (!loader || !mainContent) {
-      console.error(" Loader or main content not found!");
-      return;
-    }
-
-    loader.style.display = "none";
-    mainContent.style.display = "block";
-    console.log("Loader removed, content visible");
-  }
-
-  setTimeout(handleLoader, 3000);
-});
 
 
 // buble
