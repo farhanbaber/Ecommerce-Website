@@ -1,9 +1,14 @@
-// const loader = document.getElementById("loader-wrapper");
-// setTimeout(() => {
-//    loader.style.display = "none"
-// }, 3000)
+ const loader = document.getElementById("loader-wrapper");
+        const mainContent = document.getElementById("main-content");
 
-
+        setTimeout(() => {
+            loader.classList.add("fade-out");
+            // Wait for the fade-out and scroll transition to complete before hiding
+            setTimeout(() => {
+                loader.style.display = "none";
+                mainContent.classList.add("show");
+            }, 800); // Matches the transition duration in CSS (0.8s)
+        }, 3000);
 document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.getElementById("navbar");
   const page = document.body.id || "unknown"; 
@@ -144,4 +149,15 @@ let x = setInterval(function () {
 
     
 
+document.addEventListener("DOMContentLoaded", function () {
+  const toggler = document.querySelector(".navbar-toggler");
+  const navMenu = document.getElementById("navbarTogglerDemo02");
 
+  if (toggler && navMenu) {
+    toggler.addEventListener("click", function () {
+      navMenu.classList.toggle("show");
+    });
+  }
+});
+
+// 

@@ -3434,9 +3434,11 @@ body>*:last-child {
     display: none;
   }
 }
-
-@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
-
+@media only screen 
+  and (device-width: 414px) 
+  and (device-height: 896px) 
+  and (-webkit-device-pixel-ratio: 3) {
+  
   /* 👇 yahan sirf XS Max ke liye apna style likho */
   #fontd {
     position: relative;
@@ -3444,7 +3446,6 @@ body>*:last-child {
   }
 
 }
-
 .text-cont {
   width: 100%;
   height: 62vh;
@@ -5159,264 +5160,243 @@ label {
   }
 }
 
-.pages-mover {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 2rem auto;
-  padding: 0 10px;
-}
+    .pages-mover {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 2rem auto;
+      padding: 0 10px;
+    }
 
-/* Universe.io button style applied to <a> */
-.pages-mover a {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  border: none;
-  background: none;
-  color: #0f1923;
-  cursor: pointer;
-  position: relative;
-  padding: 8px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14px;
-  transition: all .15s ease;
-  text-decoration: none;
-  min-width: 60px;
-  min-height: 45px;
-  display: inline-block;
+    /* Universe.io button style applied to <a> */
+    .pages-mover a {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      border: none;
+      background: none;
+      color: #0f1923;
+      cursor: pointer;
+      position: relative;
+      padding: 8px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px;
+      transition: all .15s ease;
+      text-decoration: none;
+      min-width: 60px;
+      min-height: 45px;
+      display: inline-block;
 
-}
+    }
 
-.pages-mover a::before,
-.pages-mover a::after {
-  content: '';
-  display: block;
-  position: absolute;
-  right: 0;
-  left: 0;
-  height: calc(50% - 5px);
-  border: 1px solid #7D8082;
-  transition: all .15s ease;
+    .pages-mover a::before,
+    .pages-mover a::after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 0;
+      left: 0;
+      height: calc(50% - 5px);
+      border: 1px solid #7D8082;
+      transition: all .15s ease;
 
-}
+    }
 
-.pages-mover a::before {
-  top: 0;
-  border-bottom-width: 0;
-}
+    .pages-mover a::before {
+      top: 0;
+      border-bottom-width: 0;
+    }
 
-.pages-mover a::after {
-  bottom: 0;
-  border-top-width: 0;
-}
+    .pages-mover a::after {
+      bottom: 0;
+      border-top-width: 0;
+    }
 
-.pages-mover a:focus {
-  outline: none;
-}
+    .pages-mover a:focus {
+      outline: none;
+    }
 
-.pages-mover a:active::before,
-.pages-mover a:active::after {
-  right: 3px;
-  left: 3px;
-}
+    .pages-mover a:active::before,
+    .pages-mover a:active::after {
+      right: 3px;
+      left: 3px;
+    }
 
-.pages-mover a:active::before {
-  top: 3px;
-}
+    .pages-mover a:active::before {
+      top: 3px;
+    }
 
-.pages-mover a:active::after {
-  bottom: 3px;
-}
+    .pages-mover a:active::after {
+      bottom: 3px;
+    }
 
-.pages-mover a .button_lg {
-  position: relative;
-  display: block;
-  padding: 10px 20px;
-  color: #fff;
-  background-color: rgba(98, 150, 98, 0.671);
+    .pages-mover a .button_lg {
+      position: relative;
+      display: block;
+      padding: 10px 20px;
+      color: #fff;
+    background-color: rgba(98, 150, 98, 0.671);
 
-  overflow: hidden;
-  box-shadow: inset 0px 0px 0px 1px transparent;
-}
+      overflow: hidden;
+      box-shadow: inset 0px 0px 0px 1px transparent;
+    }
 
-.pages-mover a .button_lg::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 2px;
-  height: 2px;
-  background-color: #0f1923;
+    .pages-mover a .button_lg::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2px;
+      height: 2px;
+      background-color: #0f1923;
+      
+    }
 
-}
+    .pages-mover a .button_lg::after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 4px;
+      height: 4px;
+      background-color: #0f1923;
+      transition: all .2s ease;
+      
+    }
 
-.pages-mover a .button_lg::after {
-  content: '';
-  display: block;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 4px;
-  height: 4px;
-  background-color: #0f1923;
-  transition: all .2s ease;
+    .pages-mover a .button_sl {
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: -1px;
+      left: -8px;
+      width: 0;
+      background-color: rgb(255, 230, 186);
+      transform: skew(-15deg);
+      transition: all .2s ease;
+    }
 
-}
+    .pages-mover a .button_text {
+      position: relative;
+    }
 
-.pages-mover a .button_sl {
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: -1px;
-  left: -8px;
-  width: 0;
-  background-color: rgb(255, 230, 186);
-  transform: skew(-15deg);
-  transition: all .2s ease;
-}
+    .pages-mover a:hover {
+      color: #0f1923;
 
-.pages-mover a .button_text {
-  position: relative;
-}
+    }
 
-.pages-mover a:hover {
-  color: #0f1923;
+    .pages-mover a:hover .button_sl {
+      width: calc(100% + 15px);
 
-}
+    }
 
-.pages-mover a:hover .button_sl {
-  width: calc(100% + 15px);
+    .pages-mover a:hover .button_lg::after {
+      background-color: #fff;
+    }
 
-}
-
-.pages-mover a:hover .button_lg::after {
-  background-color: #fff;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .pages-mover {
-    gap: 0.5rem;
-  }
-
-  .pages-mover a {
-    min-width: 40px;
-    min-height: 40px;
-    font-size: 12px;
-  }
-
-  .pages-mover a .button_lg {
-    padding: 8px 14px;
-  }
-}
+    /* Responsive */
+    @media (max-width: 600px) {
+      .pages-mover {
+        gap: 0.5rem;
+      }
+      .pages-mover a {
+        min-width: 40px;
+        min-height: 40px;
+        font-size: 12px;
+      }
+      .pages-mover a .button_lg {
+        padding: 8px 14px;
+      }
+    }
 
 
-/* Loader Styles */
-/* body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    } */
+  #loader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.8s ease;
+        }
 
-#loader-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #f5f5f5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-  transition: opacity 0.8s ease;
-}
+        .loader {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-.loader {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+        .square {
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            border: 4px solid #3a913f;
+            border-radius: 15px;
+            animation: rotate 2.5s linear infinite;
+        }
 
-.square {
-  position: absolute;
-  width: 140px;
-  height: 140px;
-  border: 4px solid #3a913f;
-  border-radius: 15px;
-  animation: rotate 2.5s linear infinite;
-}
+        .loader img {
+            width: 80px;
+            height: auto;
+            z-index: 10;
+        }
 
-.loader img {
-  width: 80px;
-  height: auto;
-  z-index: 10;
-}
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
+        .fade-out {
+            opacity: 0;
+        }
 
-  100% {
-    transform: rotate(360deg);
-  }
-}
+        #main-content {
+            opacity: 0;
+            transition: opacity 0.8s ease;
+            padding: 20px;
+            text-align: center;
+        }
 
-.fade-out {
-  opacity: 0;
-}
-
-#main-content {
-  opacity: 0;
-  transition: opacity 0.8s ease;
-  padding: 20px;
-  text-align: center;
-}
-
-#main-content.show {
-  opacity: 1;
-}
-
-#product,
-#home {
-  overflow-y: hidden;
-}
-
-#furnix {
-  overflow-y: hidden;
-}
-
-section {
+        #main-content.show {
+            opacity: 1;
+        }     #product,#home{
+      overflow-y: hidden;
+     }
+     
+     #furnix{
+      overflow-y: hidden;
+     }
+ section {
   position: relative;
   z-index: 1;
-  overflow: hidden;
-  /* extra background na nikle */
+  overflow: hidden; /* extra background na nikle */
 }
 
 section::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: repeating-linear-gradient(to right,
-      rgba(0, 0, 0, 0.2) 0px,
-      /* dark line */
-      rgba(0, 0, 0, 0.2) 2px,
-      /* line thickness */
-      transparent 2px,
-      transparent 80px
-      /* gap */
-    );
+  background: repeating-linear-gradient(
+    to right,
+    rgba(0,0,0,0.2) 0px,   /* dark line */
+    rgba(0,0,0,0.2) 2px,   /* line thickness */
+    transparent 2px,
+    transparent 80px       /* gap */
+  );
   z-index: -1;
   pointer-events: none;
 
@@ -5428,10 +5408,8 @@ section::before {
   from {
     background-position: 0 0;
   }
-
   to {
-    background-position: 80px 0;
-    /* jitna gap hai utna shift hoga */
+    background-position: 80px 0; /* jitna gap hai utna shift hoga */
   }
 }
 
@@ -5440,11 +5418,13 @@ section::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: repeating-linear-gradient(to right,
-      rgba(0, 0, 0, 0.2) 0px,
-      rgba(0, 0, 0, 0.2) 2px,
-      transparent 2px,
-      transparent 80px);
+  background: repeating-linear-gradient(
+    to right,
+    rgba(0,0,0,0.2) 0px,
+    rgba(0,0,0,0.2) 2px,
+    transparent 2px,
+    transparent 80px
+  );
   z-index: -1;
   pointer-events: none;
   animation: moveLines 5s linear infinite;
@@ -5452,23 +5432,17 @@ section::before {
 
 @media (max-width: 768px) {
   section {
-    min-height: auto;
-    /* let height grow naturally with stacked content */
+    min-height: auto; /* let height grow naturally with stacked content */
   }
-
   section::before {
-    background-size: 40px 100%;
-    /* smaller gap for mobile */
+    background-size: 40px 100%; /* smaller gap for mobile */
   }
 }
-
 @media (max-width: 768px) {
   section {
-    position: relative;
-    /* already set, but ensure it stays */
+    position: relative; /* already set, but ensure it stays */
     overflow: hidden;
-    padding-top: 2rem;
-    /* optional, prevent content touching top */
+    padding-top: 2rem; /* optional, prevent content touching top */
     padding-bottom: 2rem;
   }
 
@@ -5479,11 +5453,13 @@ section::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: repeating-linear-gradient(to right,
-        rgba(0, 0, 0, 0.2) 0px,
-        rgba(0, 0, 0, 0.2) 1px,
-        transparent 1px,
-        transparent 40px);
+    background: repeating-linear-gradient(
+      to right,
+      rgba(0,0,0,0.2) 0px,
+      rgba(0,0,0,0.2) 1px,
+      transparent 1px,
+      transparent 40px
+    );
     z-index: -1;
     pointer-events: none;
     background-size: 40px 100%;
@@ -5500,43 +5476,10 @@ section::before {
 #navbar .nav-link {
   padding-top: 0.5rem !important;
   padding-bottom: 0.5rem !important;
-  font-size: 1.4rem;
-  /* optional: thoda compact look */
+  font-size: 1.4rem; /* optional: thoda compact look */
 }
 
 #logo {
-  font-size: 1.8rem;
-  /* logo text ki height bhi control karo */
+  font-size: 1.8rem; /* logo text ki height bhi control karo */
 }
 
-/* Default hidden state */
-#navbarTogglerDemo02 {
-  transform: translateY(-100%);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.4s ease-in-out;
-}
-
-/* When toggler is active (Bootstrap adds "show") */
-#navbarTogglerDemo02.show {
-  transform: translateY(0);
-  opacity: 1;
-  visibility: visible;
-}
-
-@media (max-width: 992px) {
-  #navbarTogglerDemo02 {
-    background: #0f1923;
-    /* apna background color dal de */
-    padding: 1rem;
-    border-radius: 0 0 12px 12px;
-  }
-
-  #navbarTogglerDemo02 .nav-link {
-    color: white !important;
-  }
-
-  #navbarTogglerDemo02 .nav-link:hover {
-    color: #ff4655 !important;
-  }
-}
