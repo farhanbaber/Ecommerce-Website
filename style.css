@@ -5491,7 +5491,6 @@ section::before {
   font-size: 1.8rem; /* logo text ki height bhi control karo */
 }
 
-/* Sirf mobile screens (<992px) pe slide-in menu apply hoga */
 @media (max-width: 991.98px) {
   #navbarTogglerDemo02 {
     position: fixed;

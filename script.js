@@ -162,12 +162,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (toggler && navMenu) {
     toggler.addEventListener("click", function () {
-      const isExpanded = toggler.getAttribute("aria-expanded") === "true";
-      if (isExpanded) {
-        navMenu.classList.add("show");   // slide in
-      } else {
-        navMenu.classList.remove("show"); // slide out
-      }
+      navMenu.classList.toggle("show");
     });
   }
 });
