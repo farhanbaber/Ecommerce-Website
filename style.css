@@ -4282,7 +4282,7 @@ label {
 .disply {
   width: 100%;
   height: 24vh;
-  /* border: 2px solid red; */
+  /* border: 2px so lid red; */
   margin-top: 1rem;
   display: flex;
   padding: 10px 20px;
@@ -4360,6 +4360,7 @@ label {
   .div-one {
     width: 100%;
     height: auto;
+    
   }
 
   /* Paragraph container */
@@ -4382,6 +4383,15 @@ label {
   display: flex;
   justify-content: center;
 }
+/* iPhone 11 Pro specific fix */
+@media screen and (max-width: 375px) {
+  .flex-container {
+    overflow: hidden; /* background lines parent ke bahar na jayein */
+    height: 190vh;    /* apki height adjust kar sakte ho agar zyada neeche khinch rahi hai */
+    position: relative;
+  }
+}
+
 
 .sticky-img {
   width: 90%;
